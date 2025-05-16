@@ -1,0 +1,125 @@
+.portfolio {
+  padding: 80px 20px;
+  background-color: #165e80; /* Adjust as needed */
+}
+
+.portfolio .container {
+  width: 100%;;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.portfolio h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  border-radius: 12px; /* Bordas arredondadas para um visual mais moderno */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+  display: block;
+  background-position: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza o efeito */
+}
+.portfolio-item:hover img {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.portfolio-item:hover .overlay {
+  opacity: 1;
+}
+
+.overlay h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.overlay p {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.overlay a {
+  background-color: #e74c3c; /* Adjust as needed */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.overlay a:hover {
+  background-color: #c0392b; /* Adjust as needed */
+}
+
+.carousel-container {
+  overflow-x: hidden;
+  width: 100%;
+  white-space: nowrap;
+  padding: 20px 0;
+}
+
+.carousel-track {
+  display: flex;
+  width: max-content;
+  gap: 20px;
+}
+
+.portfolio-item {
+  flex: 0 0 auto;
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.overlay {
+  padding: 10px;
+}

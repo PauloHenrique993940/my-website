@@ -1,0 +1,57 @@
+.hero {
+  background-image: url("../assets/frontend-developer.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; /* Faz a imagem ocupar todo o espaço */
+  
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;   /* Largura total da tela */
+  height: 100vh;  /* Altura total da tela */
+}
+
+
+@media (max-width: 425px){
+  .hero{
+    opacity: 0.5;
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.welcome {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.contact-button {
+  background-color: #e74c3c; /* Adjust as needed */
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #c0392b; /* Adjust as needed */
+}
