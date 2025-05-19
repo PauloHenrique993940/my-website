@@ -1,3 +1,4 @@
+/* Sidebar padrão (desktop) */
 .sidebar {
   background-color: #000000;
   color: #ffffffff;
@@ -12,10 +13,9 @@
   align-items: center;
   border-right: 1px solid #fd9733;
   z-index: 100;
-  /* Ensure it's above other content */
 }
 
-span{
+span {
   color: #ffffff;
 }
 
@@ -67,8 +67,60 @@ span{
 
 .navigation a:hover {
   background-color: #333;
-
 }
+
+/* ---------- NOVO: Top navigation para mobile ---------- */
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000000;
+  padding: 10px 20px;
+  z-index: 200;
+  display: none;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* ---------- Mobile Styles ---------- */
+@media (max-width: 768px) {
+  .top-nav {
+    display: flex;
+  }
+
+  .sidebar {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: #000000;
+    z-index: 150;
+    padding: 20px;
+    border-right: 1px solid #fd9733;
+  }
+
+  .sidebar.active {
+    display: flex !important;
+  }
+
+  .navigation ul {
+    align-items: flex-start;
+  }
+}
+
+/* ---------- Pequenas telas (ex: smartphones) ---------- */
 @media (max-width: 425px) {
   .sidebar {
     max-width: 100%;
@@ -77,7 +129,6 @@ span{
   }
 
   .profile {
-    display: flex;
     flex-direction: column;
   }
 
@@ -90,14 +141,14 @@ span{
   .name {
     font-size: 1.2rem;
     margin-bottom: 5px;
-    text-align:left;
+    text-align: left;
   }
 
   .navigation ul {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza os itens */
-    justify-content: center; /* Opcional: centraliza no eixo cruzado */
+    align-items: center;
+    justify-content: center;
     width: 100%;
     padding: 0;
     overflow-x: hidden;
@@ -105,15 +156,19 @@ span{
   }
 
   .navigation li {
-    margin-bottom: 10px; /* Espaço entre os itens verticalmente */
-    margin-right: 0; /* Remove espaçamento lateral */
+    margin-bottom: 10px;
+    margin-right: 0;
   }
 
   .navigation a {
     padding: 8px 10px;
-    display: block;
-    border-radius: 5px;
     font-size: 0.9rem;
     text-align: center;
   }
 }
+
+/* Oculta a sidebar se necessário */
+.hidden {
+  display: none !important;
+}
+

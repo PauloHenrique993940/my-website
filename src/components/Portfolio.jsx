@@ -54,7 +54,7 @@ function Portfolio() {
           <div className="carousel-track">
             {projects.concat(projects).map((project, index) => (
               <div key={index} className="portfolio-item">
-                <img src={project.imageUrl} alt={project.name} />
+                <img src={project.imageUrl} alt={project.name} className='projectImage' />
                 <div className="overlay">
                   <h3>{project.name}</h3>
                   <p>{project.description}</p>

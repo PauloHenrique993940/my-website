@@ -5,8 +5,8 @@ import About from './components/About';
 import WhatIDo from './components/WhatIdo';
 import Resume from './components/Resume';
 import Portfolio from './components/Portfolio';
-import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
+import WhyChooseMe from './components/WhyChooseMe';
 import './App.css';
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
         <WhatIDo />
         <Resume />
         <Portfolio />
-        <Testimonials />
+        <WhyChooseMe />
         <Contact />
       </main>
     </div>

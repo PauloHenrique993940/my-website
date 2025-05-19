@@ -1,6 +1,6 @@
 .portfolio {
   padding: 80px 20px;
-  background-color: #165e80; /* Adjust as needed */
+  background-color: #0c1719; /* Adjust as needed */
 }
 
 .portfolio .container {
@@ -11,7 +11,7 @@
 
 .portfolio h2 {
   font-size: 2.5rem;
-  color: #333;
+  color: orangered;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -25,18 +25,17 @@
 .portfolio-item {
   position: relative;
   overflow: hidden;
+  width: 100%;
+  height: auto;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio-item img {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  border-radius: 12px; /* Bordas arredondadas para um visual mais moderno */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+  height: auto;
+  border-radius: 12px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
   display: block;
-  background-position: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza o efeito */
 }
 .portfolio-item:hover img {

@@ -26,8 +26,9 @@
 }
 
 .service-card {
-  background-color: #fff;
+  background-color: #0d1819;
   padding: 30px;
+  border: 1px solid #fff;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -35,13 +36,13 @@
 
 .service-card h3 {
   font-size: 1.8rem;
-  color: #333;
+  color: #fff;
   margin-bottom: 15px;
 }
 
 .service-card p {
   font-size: 1.1rem;
-  color: #ffffff;
+  color: #fff;
   line-height: 1.6;
   text-align: justify;
 }
@@ -49,7 +50,8 @@
 .what-i-do .summary {
   font-size: 1.1rem;
   margin-bottom: 1rem;
-  color: #ffffff;
+  color: #000000;
+  font-weight: bold;
 }
 
 .keywords-display {
